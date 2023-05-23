@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulari Sol·licitut material</title>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 25px;
+      background-color: rgb(224, 224, 209);
+    }
+
+      h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 25px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="datetime-local"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+</style>
+</head>
+<body>
+  <h1>Sol·licitut de material</h1>
+
+  <form action="formulari_solicitud.php" method="post" enctype="multipart/form-data">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" placeholder="Joan" required>
+
+    <label for="primer_cognom">Primer Cognom:</label>
+    <input type="text" id="primer_cognom" name="primer_cognom" placeholder="Bayarri" required>
+
+    <label for="segon_cognom">Segon Cognom:</label>
+    <input type="text" id="segon_cognom" name="segon_cognom" placeholder="Subirats" required>
+
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email" placeholder="joanbayarri@iesmontsia.org" required>
+
+    <label for="cicle">Cicle:</label>
+    <input type="text" id="cicle" name="cicle" placeholder="Superior"required>
+
+    <label for="nom_cicle">Nom del cicle:</label>
+    <input type="text" id="nom_cicle" name="nom_cicle" placeholder="Administracio de sistemes informatics en xarxa" required>
+
+    <label for="localitat">Localitat:</label>
+    <input type="text" id="localitat" name="localitat" placeholder="Amposta" required>
+
+    <label for="direccio">Direcció:</label>
+    <input type="text" id="direccio" name="direccio" placeholder="Carrer..." required>
+
+    <label for="telefono">Número de teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+34 623209395" required>
+
+    <label for="codi_postal">Codi postal:</label>
+    <input type="text" id="codi_postal" name="codi_postal" placeholder="43870" required>
+
+    <label for="prioridad">Prioridad per a la sol·licitut del material:</label>
+    <select id="prioridad" name="prioridad" required>
+      <option value="baja">Baixa</option>
+      <option value="media">Mitja</option>
+      <option value="alta">Alta</option>
+    </select>
+
+    <br></br>
+
+    <label for="motiu">Motiu per a la sol·licitut:</label>
+    <textarea id="motiu" name="motiu" rows="5" required></textarea>
+
+   <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

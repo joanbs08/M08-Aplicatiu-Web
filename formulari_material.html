@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulari material</title>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 25px;
+      background-color: rgb(224, 224, 209);
+    }
+
+      h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 25px;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="datetime-local"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+</style>
+</head>
+<body>
+  <h1>Formulari escullir material</h1>
+
+  <form action="formulari_material2.php" method="post" enctype="multipart/form-data">
+    <label for="etiquetaDepInf">etiquetaDepInf</label>
+    <input type="text" id="etiquetaDepInf" name="etiquetaDepInf" placeholder="" required>
+
+    <label for="numSerie">numSerie</label>
+    <input type="text" id="numSerie" name="numSerie" placeholder="" required>
+
+    <label for="macEthernet">macEthernet:</label>
+    <input type="text" id="macEthernet" name="macEthernet" placeholder="" required>
+
+    <label for="macWifi">macWifi:</label>
+    <input type="text" id="macWifi" name="macWifi" placeholder="" required>
+
+    <label for="SACE">SACE:</label>
+    <input type="text" id="SACE" name="SACE" placeholder=""required>
+
+    <label for="dataAdquisicio">dataAdquisicio:</label>
+    <input type="text" id="dataAdquisicio" name="dataAdquisicio" placeholder="" required>
+
+    <label for="Ubicacio">Ubicacio:</label>
+    <input type="text" id="Ubicacio" name="Ubicacio" placeholder="" required>
+
+    <label for="dispositiu">Escull el dispositiu:</label>
+    <select id="dispositiu" name="dispositiu" required>
+      <option value="portatil">Portatil</option>
+      <option value="tablet">Tablet</option>
+    </select>
+
+    <br></br>
+
+   <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
